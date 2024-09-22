@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA2111026030214</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RA2111026030214</h1>
+        <label for="jsonInput">Enter JSON:</label>
+        <textarea id="jsonInput" placeholder='{ "data": ["A", "C", "z"] }'></textarea>
+        <button id="submitBtn">Submit</button>
+        <div id="error"></div>
+
+        <div id="dropdownContainer" class="hidden">
+            <label for="filterOptions">Select Filters:</label>
+            <select id="filterOptions" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highestLowercase">Highest Lowercase Alphabet</option>
+            </select>
+            <button id="filterBtn">Apply Filters</button>
+        </div>
+
+        <div id="responseContainer">
+            <h3>Response:</h3>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
